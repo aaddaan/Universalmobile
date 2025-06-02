@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Mobile Galaxy World</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">📱 Mobile Galaxy World</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <h2>📸 Our Shop Gallery</h2>
+    <div class="gallery-grid">
+      <img src="1.png" alt="Shop Image 1">
+      <img src="2.png" alt="Shop Image 2">
+      <img src="shop.jpg" alt="Shop Image 3">
+      <img src="shop2.jpg" alt="Shop Image 4">
+      <img src="shop6.png" alt="Shop Image 5">
+      <img src="shop7.png" alt="Shop Image 6">
+      <img src="shop5.jpg" alt="Shop Image 3">
+      <img src="shop3.jpg" alt="Shop Image 4">
+      <img src="shop.jpg" alt="Shop Image 5">
+     
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mobile Galaxy World. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Galaxy World</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+
+ <header class="navbar">
+  <div class="logo">📱 Universal Mobile</div>
+  
+  <!-- Hamburger icon -->
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+  
+  <nav>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <section class="hero">
+    <h1>Welcome to Universal Mobile </h1>
+    <p>Your trusted hub for the latest smartphones</p>
+    <a href="product.html" class="hero-btn">Explore Products</a>
+  </section>
+
+  <section class="brands">
+    <h2>Trusted Brands</h2>
+    <div class="brand-logos">
+      <img src="Samsung.png" alt="Samsung" />
+      <img src="Apple.png" alt="Apple" />
+      <img src="OnePlus.png" alt="OnePlus" />
+      <img src="Xiaomi.png" alt="Xiaomi" />
+    </div>
+  </section>
+
+  <section class="products">
+    <h2>Latest Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="s.png" alt="Product 1" />
+        <h3>Galaxy S23 Ultra</h3>
+    <a href="https://wa.me/917617878155?text=Hello!%20I%20want%20to%20buyphone" target="_blank" class="buy-btn">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="a.png" alt="Product 2" />
+        <h3>iPhone 14 Pro Max</h3>
+       <a href="https://wa.me/917617878155?text=Hello!%20I%20want%20to%20buyphone" target="_blank" class="buy-btn">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="o.png" alt="Product 3" />
+        <h3>OnePlus 12R</h3>
+        <a href="https://wa.me/917617878155?text=Hello!%20I%20want%20to%20buyphone" target="_blank" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Universal Mobile Point. All rights reserved.</p>
+  </footer>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+</body>
+</html>
