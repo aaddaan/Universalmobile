@@ -2,52 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gallery - Universal Mobile </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Mobile Galaxy World</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Navbar -->
   <header class="navbar">
-    <div class="logo">📱 Universal Mobile</div>
+    <div class="logo">📱 Mobile Galaxy World</div>
     <div class="menu-toggle" id="menu-toggle">☰</div>
     <nav>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="product.html">Products</a></li>
         <li><a href="Gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Gallery Section -->
-  <section class="gallery-section">
-    <h2>📸 Our Shop Gallery</h2>
-    <div class="gallery-grid">
-      <img src="1.png" alt="Shop Image 1">
-      <img src="2.png" alt="Shop Image 2">
-      <img src="shop.jpg" alt="Shop Image 3">
-      <img src="shop2.jpg" alt="Shop Image 4">
-      <img src="shop6.png" alt="Shop Image 5">
-      <img src="shop7.png" alt="Shop Image 6">
-      <img src="shop5.jpg" alt="Shop Image 3">
-      <img src="shop3.jpg" alt="Shop Image 4">
-      <img src="shop.jpg" alt="Shop Image 5">
-     
-    </div>
-  </section>
+  <main class="contact-page">
+    <section class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>We’re here to help! Reach out to us via WhatsApp, Email, or visit us in-store.</p>
+      
+      <div class="contact-cards">
+        <div class="contact-card">
+          <h3>📱 WhatsApp</h3>
+          <a href="https://wa.me/7617878155" target="_blank" class="contact-link">
+            +91 98765 43210
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <h3>📱 Contact
+          </h3>
+          <a href="" class="contact-link">
+            7947143800
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <h3>📍 Address</h3>
+          <p>Near Gular Naka, Balkhandi Naka Road, Gular Naka-210001,Banda Uttar Pradesh<br>India</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <h2>Send Us a Message</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Mobile Galaxy World. All rights reserved.</p>
   </footer>
 
   <script>
+    // Navbar toggle for mobile
     const toggle = document.getElementById("menu-toggle");
     const navLinks = document.getElementById("nav-links");
-
     toggle.addEventListener("click", () => {
       navLinks.classList.toggle("active");
+    });
+
+    // Contact form submission handler (example)
+    const form = document.getElementById("contact-form");
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      alert("Thank you for contacting us! We will get back to you soon.");
+      form.reset();
     });
   </script>
 </body>
